@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 208, 208);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: block;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+button {
+    height: 30px;
+    width: 40px;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 2.75em;
+}
+
+.checkerboard {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(3, 60px);
+    width: 100%;
+}
+
+.checkerboard div {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.checkerboard div:nth-child(odd) {
+    background-color: #00941e;
+}
+
+.checkerboard div:nth-child(even) {
+    background-color: #3d6eff;
+}
+
+.checkerboard div:nth-child(19), 
+.checkerboard div:nth-child(21), 
+.checkerboard div:nth-child(23), 
+.checkerboard div:nth-child(25), 
+.checkerboard div:nth-child(27), 
+.checkerboard div:nth-child(29), 
+.checkerboard div:nth-child(31), 
+.checkerboard div:nth-child(33), 
+.checkerboard div:nth-child(35) {
+    background-color: #3d6eff;
+}
+
+.checkerboard div:nth-child(20), 
+.checkerboard div:nth-child(22), 
+.checkerboard div:nth-child(24), 
+.checkerboard div:nth-child(26), 
+.checkerboard div:nth-child(28), 
+.checkerboard div:nth-child(30), 
+.checkerboard div:nth-child(32), 
+.checkerboard div:nth-child(34), 
+.checkerboard div:nth-child(36) {
+    background-color: #00941e;
+}
+
+.checkerboard a{
+    background-color: #3d6eff;
+    font-size: 1.15em;
+    display: block;
+    font-weight: bold;
+}
+
+.checker {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(1, 60px);
+    width: 100%;
+}
+
+.checker div {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.checker div:nth-child(odd) {
+    background-color: #FF5900;
+}
+
+.checker div:nth-child(even) {
+    background-color: #ff0000;
+}
+
+.checker a {
+    background-color: #ff0000;
+    font-size: 1.15em;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: black;
+    grid-gap: 4px;
+    padding: 4px;
+    width: 500px;
+    height: 502px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#red1 {
+    background-color: #ff0000;
+}
+
+#yellow {
+    background-color: #ffcc00;
+}
+
+#orange {
+    background-color: #FF5900;
+}
+
+#blue1 {
+    background-color: #3d6eff;
+}
+
+#white {
+    background-color: #FFFFFF;
+}
+
+#green1 {
+    background-color: #00941e;
+}
+
+#green2 {
+    background-color: #00941e;
+}
+
+#red2 {
+    background-color: #ff0000;
+}
+
+#blue2 {
+    background-color: #3d6eff;
+}
