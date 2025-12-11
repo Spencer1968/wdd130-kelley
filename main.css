@@ -80,11 +80,6 @@ header h1 {
     font-weight: bold;
 }
 
-.checkerboard button {
-    position: absolute;
-    margin: 16px 1.5%;
-}
-
 .checker {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
