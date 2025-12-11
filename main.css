@@ -32,15 +32,8 @@ header {
 }
 
 #logo {
-<<<<<<< HEAD
     height: 50px;
     width: 50px;
-=======
-    position: absolute;
-    margin: 10px 1.4%;
-    height: 40px;
-    width: 40px;
->>>>>>> e927fb374fc71fdb5ddad2d3fc95717c064335ab
 }
 
 header h1 {
