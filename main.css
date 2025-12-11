@@ -28,7 +28,6 @@ header {
     display: block;
     grid-template-columns: repeat(9, 1fr);
     width: 100%;
-    height: 200px;
     margin-bottom: 50px;
 }
 
@@ -76,35 +75,15 @@ header h1 {
     background-color: #3d6eff;
 }
 
-.checkerboard div:nth-child(19), 
-.checkerboard div:nth-child(21), 
-.checkerboard div:nth-child(23), 
-.checkerboard div:nth-child(25), 
-.checkerboard div:nth-child(27), 
-.checkerboard div:nth-child(29), 
-.checkerboard div:nth-child(31), 
-.checkerboard div:nth-child(33), 
-.checkerboard div:nth-child(35) {
-    background-color: #3d6eff;
-}
-
-.checkerboard div:nth-child(20), 
-.checkerboard div:nth-child(22), 
-.checkerboard div:nth-child(24), 
-.checkerboard div:nth-child(26), 
-.checkerboard div:nth-child(28), 
-.checkerboard div:nth-child(30), 
-.checkerboard div:nth-child(32), 
-.checkerboard div:nth-child(34), 
-.checkerboard div:nth-child(36) {
-    background-color: #00941e;
-}
-
 .checkerboard a{
-    background-color: #3d6eff;
     font-size: 1.15em;
     display: block;
     font-weight: bold;
+}
+
+.checkerboard button {
+    position: absolute;
+    margin: 16px 1.5%;
 }
 
 .checker {
@@ -151,8 +130,8 @@ header h1 {
     background-color: black;
     grid-gap: 4px;
     padding: 4px;
-    width: 500px;
-    height: 502px;
+    width: 45%;
+    aspect-ratio: 1 / 1 ;
     margin-top: 80px;
     margin-bottom: 100px;
 }
@@ -191,4 +170,19 @@ header h1 {
 
 #blue2 {
     background-color: #3d6eff;
+}
+
+@media screen and (max-width: 560px) {
+    .checker, .checkerboard {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .smallHide {
+        display: none !important;
+    }
+    .checkerboard button {
+        margin: 16px 2.5%;
+    }
+    .box {
+        width: 80%
+    }
 }
